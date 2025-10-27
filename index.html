@@ -1,9 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inderjeet Yadav - Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <embed src="InderjeetYadav.pdf" type="application/pdf" width="100%" height="100%" style="position: absolute; top: 0; left: 0; height: 100vh;">
+    <div class="container">
+        <header>
+            <div class="header-content">
+                [cite_start]<h1>INDERJEET YADAV</h1> [cite: 1]
+                <div class="contact-info">
+                    [cite_start]<a href="mailto:inderjeet_yadav@outlook.com" target="_blank"><i class="fas fa-envelope"></i> inderjeet_yadav@outlook.com</a> [cite: 2]
+                    [cite_start]<a href="https://linkedin.com/in-inderjeet-yadav" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in-inderjeet-yadav</a> [cite: 2]
+                    [cite_start]<a href="https://github.com/inderjeety" target="_blank"><i class="fab fa-github"></i> github.com/inderjeety</a> [cite: 2]
+                </div>
+            </div>
+            <a href="InderjeetYadav.pdf" class="download-btn" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </header>
+
+        <main>
+            <section class="skills">
+                [cite_start]<h2><i class="fas fa-cogs"></i> Technical Skills</h2> [cite: 3]
+                <ul>
+                    [cite_start]<li><strong>Languages:</strong> Python, Java, Typescript, Kotlin, Hack, HTML, CSS, C [cite: 5]</li>
+                    [cite_start]<li><strong>Databases:</strong> MySQL, MongoDB, Redshift [cite: 6]</li>
+                    [cite_start]<li><strong>Frontend:</strong> React, JavaScript [cite: 7]</li>
+                    [cite_start]<li><strong>Backend:</strong> Tornado (Python), API Design [cite: 8]</li>
+                    [cite_start]<li><strong>Cloud & DevOps:</strong> AWS, Kubernetes, GitLab CI, Prometheus, Grafana [cite: 9]</li>
+                    [cite_start]<li><strong>Platforms:</strong> Ubuntu, Windows, Mac OS [cite: 9]</li>
+                </ul>
+            </section>
+
+            <section class="experience">
+                [cite_start]<h2><i class="fas fa-briefcase"></i> Work Experience</h2> [cite: 10]
+                
+                <div class="job">
+                    <div class="job-header">
+                        <h3>Software Engineer | [cite_start]Google</h3> [cite: 11]
+                        [cite_start]<span class="job-date">Mountain View, CA (Sept 2022 - Present)</span> [cite: 11]
+                    </div>
+                    <ul>
+                        [cite_start]<li>Spearheaded a strategic experiment to optimize user support journeys by directing customers to a chat bot before connecting to a live agent, resulting in an annual run rate of 26K regretted case reduction (25% of my team's RCR goal). [cite: 13, 14, 15]</li>
+                        [cite_start]<li>Architected and delivered the MVP for the 'Known Issues' service to proactively surface existing user issues by aggregating data from multiple backend services. [cite: 16] [cite_start]Subsequently spearheaded the 'Fast Follow' re-architecture to refactor the system into a scalable, standalone microservice, correcting flawed issue prioritization logic and reducing technical debt. [cite: 17]</li>
+                        [cite_start]<li>Integrated and optimized Genie, a rule-based troubleshooting tool, for Google Ads support. [cite: 18] [cite_start]Led the technical integration into the Ads Get Help page, reducing case creation, and drove the development of a proof of concept for leadership. [cite: 19, 20] [cite_start]Collaborated with UX and data analysts, resulting in a 2% increase in user engagement and a 4.5% annual reduction in case creation. [cite: 21]</li>
+                        <li>Migrated the Escalation module (for connecting with live agents in the GSE AI chat bot) to follow the Conversational AI Standard and Practices (CSP). [cite_start]This allowed migration to streaming RPC and made the module independent for integration by other services like Ads Help Guide. [cite: 22, 23]</li>
+                        [cite_start]<li>Designed, ran, and analyzed an SEO Experiment to update Google's YouTube help center article metadata using Gemini Pro, resulting in a +2% increase in page rank, +3% (approx. +510k) search impressions, and +4% (approx. +6000) clicks per day. [cite: 24, 25, 26] [cite_start]Wrote a project document to automate this process for all Google help centers. [cite: 27]</li>
+                        [cite_start]<li>Led the project to migrate the Escalation module from a hardcoded design to a configurable one, allowing onboarding of multiple Google help centers. [cite: 28] [cite_start]Onboarded 5 new help centers within 5 weeks, enabling >65k users to be connected with a live agent per month. [cite: 29]</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <h3>Software Development Engineer | [cite_start]Amazon</h3> [cite: 30]
+                        [cite_start]<span class="job-date">Seattle, WA (July 2020 - Sept 2022)</span> [cite: 30]
+                    </div>
+                    <ul>
+                        [cite_start]<li>Built internal APIs (Kotlin) for AWS Glue Elastic Views, a tool for building materialized views across multiple data stores. [cite: 31]</li>
+                        [cite_start]<li>Added functionalities to existing Prime Video internal tools, covering both frontend (React & JavaScript) and backend (Java). [cite: 32]</li>
+                        [cite_start]<li>Added metrics to identify application performance and user interaction. [cite: 33]</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <h3>Software Engineer | [cite_start]Wish</h3> [cite: 34]
+                        [cite_start]<span class="job-date">San Francisco, CA (June 2018 - June 2020)</span> [cite: 34]
+                    </div>
+                    <ul>
+                        [cite_start]<li>Migrated Wish i18n pipelines, managing all platform translations, onto GitLab for continuous integration and deployment. [cite: 36, 37]</li>
+                        [cite_start]<li>Designed a string extraction process that reduced extraction time by over 80% and allowed for new features. [cite: 39]</li>
+                        [cite_start]<li>Built internal tools (React frontend, Tornado backend) for a translation search directory and launching experiments based on translation progress. [cite: 40]</li>
+                        [cite_start]<li>Built a pipeline for machine-translating product titles, ran A/B experiments, and built internal tools for the translation team. [cite: 41]</li>
+                        [cite_start]<li>Built a framework to automate initial A/B testing analysis for Growth experiments using Tornado and MongoDB. [cite: 42] [cite_start]Worked with infrastructure to manage deployment using AWS and Kubernetes. [cite: 43]</li>
+                        [cite_start]<li>Modified ETL pipelines to generate campaign KPI's and export results to Redshift. [cite: 44]</li>
+                        [cite_start]<li>Wrote daily crons to monitor email/push notification volume drops, generating alerts and graphs using Prometheus and Grafana. [cite: 45, 46]</li>
+                        [cite_start]<li>Generated and analyzed one-off and ongoing campaigns sent to over 20 million users daily, focusing on project revenue and user engagement. [cite: 47, 48]</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <h3>Software Engineering Intern | [cite_start]Facebook</h3> [cite: 49]
+                        [cite_start]<span class="job-date">Menlo Park, CA (May 2017 - Aug 2017)</span> [cite: 49]
+                    </div>
+                    <ul>
+                        [cite_start]<li>Developed an interface and API using React Library and Hack. [cite: 50]</li>
+                        [cite_start]<li>Built the UI/API in Facebook Business Manager for businesses to manage their partners on the Facebook Ads Platform. [cite: 51]</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education">
+                [cite_start]<h2><i class="fas fa-user-graduate"></i> Education</h2> [cite: 52]
+                <div class="school">
+                    [cite_start]<h3>North Carolina State University, Raleigh, NC</h3> [cite: 53]
+                    [cite_start]<p>MSc in Computer Science, GPA 4.0/4.0</p> [cite: 53]
+                </div>
+                <div class="school">
+                    [cite_start]<h3>IIT (ISM), Dhanbad, India</h3> [cite: 53]
+                    [cite_start]<p>Bachelor in Computer Science & Engineering, GPA 8.23/10</p> [cite: 53]
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Inderjeet Yadav</p>
+        </footer>
+    </div>
 </body>
 </html>
