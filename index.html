@@ -28,6 +28,9 @@
                     <a href="https://calendly.com/inderjeet_yadav" target="_blank" style="font-weight: 600;"><i class="fas fa-calendar-alt"></i> Book a Meeting</a>
                 </div>
             </div>
+            <a href="#" class="download-btn ai-builder-btn" id="aiBuilderBtn">
+                <i class="fas fa-magic"></i> Smart Resume Tailor
+            </a>
             <a href="InderjeetYadav.pdf" class="download-btn" id="downloadBtn" download>
                 <i class="fas fa-download"></i> Download Resume
             </a>
@@ -123,9 +126,24 @@
         </footer>
     </div>
 
+    <div id="aiBuilderView">
+            <div class="iframe-header">
+                <div class="header-title">
+                    <i class="fas fa-magic"></i> 
+                    <span>Smart Resume Tailor</span>
+                </div>
+                <button id="backToStaticBtn" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Main Website
+                </button>
+            </div>
+            <iframe id="aiIframe" src="https://inderjeetyadav-vercel.vercel.app/" title="Smart Resume Tailor"></iframe>
+        </div>
+
+    </div>
+
     <div id="chatModalOverlay" class="chat-modal-overlay">
         <div class="chat-modal-content">
-            <span class="chat-modal-close">&times;</span>
+            <span id="chatModalClose" class="chat-modal-close">&times;</span>
             <div id="chatMessages" class="chat-messages"></div>
             <div id="chatError" class="chat-error-message"></div>
             <div id="chatInputArea" class="chat-input-area">
