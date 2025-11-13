@@ -13,7 +13,7 @@ let userData = {
 // --- Get all the elements we need ---
 const downloadBtn = document.getElementById('downloadBtn');
 const modalOverlay = document.getElementById('chatModalOverlay');
-const closeBtn = document.querySelector('.chat-modal-close');
+const closeBtn = document.getElementById('chatModalClose');;
 const sendBtn = document.getElementById('chatSendBtn');
 const chatMessages = document.getElementById('chatMessages');
 const chatTextarea = document.getElementById('chatTextarea');
