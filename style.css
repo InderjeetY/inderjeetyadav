@@ -93,8 +93,9 @@ header {
 
 .header-actions {
     display: flex;
-    gap: 15px; /* Space between the two buttons */
-    align-items: flex-start;
+    flex-direction: column; /* Always stack */
+    gap: 10px; /* Space between buttons */
+    align-items: flex-end; /* Align to the right side */
 }
 
 .contact-info {
@@ -116,28 +117,39 @@ header {
     text-align: center;
 }
 
-.download-btn {
-    background-color: #198754; /* Green */
+/* Shared Button Styles (Refactored) */
+.std-btn {
     color: #ffffff;
     padding: 12px 24px;
     border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
-    align-self: flex-start;
-    /* Added transitions for hover effect */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 100%; /* Ensure consistency in stack */
+    min-width: 200px; /* Minimum width for better look */
+    text-align: center;
 }
 
-.download-btn i {
+.std-btn i {
     margin-right: 8px;
 }
 
-.download-btn:hover {
-    background-color: #157347;
-    color: #ffffff;
+.std-btn:hover {
     text-decoration: none;
-    /* Added hover effects */
     transform: translateY(-3px);
+    color: #ffffff;
+}
+
+/* Specific Button Colors */
+.btn-download {
+    background-color: #198754; /* Green */
+}
+
+.btn-download:hover {
+    background-color: #157347;
     box-shadow: 0 6px 16px rgba(25, 135, 84, 0.3);
 }
 
@@ -244,16 +256,13 @@ footer {
     }
 
     .header-actions {
-        flex-direction: column;
         width: 100%;
         margin-top: 20px;
+        align-items: center; /* Center buttons on mobile */
     }
 
-    .download-btn {
-        align-self: auto; /* Resets alignment */
+    .std-btn {
         width: 100%;
-        text-align: center;
-        margin-top: 15px;
     }
 
     section {
