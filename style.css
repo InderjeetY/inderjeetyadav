@@ -91,6 +91,12 @@ header {
     gap: 20px;
 }
 
+.header-actions {
+    display: flex;
+    gap: 15px; /* Space between the two buttons */
+    align-items: flex-start;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -237,6 +243,12 @@ footer {
         padding: 30px;
     }
 
+    .header-actions {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
     .download-btn {
         align-self: auto; /* Resets alignment */
         width: 100%;
@@ -265,12 +277,12 @@ footer {
 /* =========== AI BUILDER BUTTON & OVERLAY =========== */
 
 .ai-builder-btn {
-    background-color: #0d6efd; /* Blue */
+    background-color: #6f42c1; /* Purple */
 }
 
 .ai-builder-btn:hover {
-    background-color: #0a58ca;
-    box-shadow: 0 6px 16px rgba(13, 110, 253, 0.3);
+    background-color: #59359a; /* Darker Purple */
+    box-shadow: 0 6px 16px rgba(111, 66, 193, 0.3);
 }
 
 /* Full Screen Overlay */
@@ -308,7 +320,8 @@ footer {
 }
 
 .header-title i {
-    color: #0d6efd;
+    color: #6f42c1; /* Purple flask */
+    margin-right: 10px;
 }
 
 .iframe-header .back-btn {
