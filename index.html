@@ -13,8 +13,8 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script src="email.js" defer></script>
-    <script src="chat.js" defer></script>
     <script src="view-controller.js" defer></script>
+    <script src="chat.js" defer></script>
 </head>
 <body>
     <div id="staticResumeView" class="container">
@@ -31,11 +31,11 @@
             </div>
             
             <div class="header-actions">
-                <a href="#" class="download-btn ai-builder-btn" id="aiBuilderBtn">
-                    <i class="fas fa-rocket"></i> View Dev Preview
+                <a href="#" class="std-btn ai-builder-btn" id="aiBuilderBtn">
+                    <i class="fas fa-rocket"></i> Beta
                 </a>
                 
-                <a href="InderjeetYadav.pdf" class="download-btn" id="downloadBtn">
+                <a href="InderjeetYadav.pdf" class="std-btn btn-download" id="downloadBtn">
                     <i class="fas fa-download"></i> Download Resume
                 </a>
             </div>
@@ -134,14 +134,14 @@
     <div id="aiBuilderView">
             <div class="iframe-header">
                 <div class="header-title">
-                    <i class="fas fa-magic"></i> 
-                    <span>Smart Resume Tailor</span>
+                    <i class="fas fa-flask"></i> 
+                    <span>Beta</span>
                 </div>
                 <button id="backToStaticBtn" class="back-btn">
-                    <i class="fas fa-arrow-left"></i> Back to Main Website
+                    <i class="fas fa-arrow-left"></i> Back to Static Resume
                 </button>
             </div>
-            <iframe id="aiIframe" src="https://inderjeetyadav-vercel.vercel.app/" title="Smart Resume Tailor"></iframe>
+            <iframe id="aiIframe" src="https://inderjeetyadav-vercel.vercel.app/" title="Beta"></iframe>
         </div>
     </div>
 
