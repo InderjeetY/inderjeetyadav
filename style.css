@@ -319,18 +319,41 @@ footer {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Group the title and selector together */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .header-title {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
 }
 
 .header-title i {
     color: #6f42c1; /* Purple flask */
-    margin-right: 10px;
+}
+
+/* Style the Dropdown */
+.version-select {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #495057;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.version-select:hover, .version-select:focus {
+    border-color: #0d6efd;
 }
 
 .iframe-header .back-btn {
